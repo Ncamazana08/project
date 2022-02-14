@@ -1,7 +1,5 @@
 <template>
- <form
-        action="https://formspree.io/f/xoqybjpe"
-        method="POST"
+ <form @submit.prevent="handleSubmit"
       >
   
        <div class="col-sm-auto col-md-auto col-lg- col-xl- col-xxl">
@@ -31,51 +29,18 @@
           </div>
         </div>
       </div>
-
-  
-
-        <!-- <div class="col-md-6 mt-6 mt-md-0 d-flex align-items-stretch">
-          <div class="info-box">
-            <i class="bx bx-share-alt"></i>
-            <h3>Social Profiles</h3>
-            <div class="social-links">
-
-              <div class="buttons" style="display: flex; padding-top: 10px;">
-                <button type="submit" style="background-color: transparent; border: none;"><i class="bi bi-facebook"></i></button>
-                <button type="submit" style="background-color: transparent; border: none;"><i class="bi bi-whatsapp"></i></button>
-                <button type="submit" style="background-color: transparent; border: none;"><i class="bi bi-messenger"></i></button>
-                <button type="submit" style="background-color: transparent; border: none;"><i class="bi bi-linkedin"></i></button>
-                <button type="submit" style="background-color: transparent; border: none;"><i class="bi bi-skype"></i></button>
-              </div>
-            </div>
-          </div>
-        </div> -->
-
-        <!-- <div class="col-md-6 mt-4 d-flex align-items-stretch">
-          <div class="info-box">
-            <i class="bx bx-phone-call"></i>
-            <h3>Call Me</h3>
-            <p>+27 63 148 0554</p>
-          </div>
-        </div> -->
-      <!-- </div> -->
-
-       <!-- </div> -->
-  
-    
       <h2 style="color: blue;">Please complete the form below.</h2>
         <div class="row" style="width:500px">
           <div class="col">
         
-              <input type="text" class="form-control" placeholder="First Name" name="firstname">
+              <input type="text" class="form-control" placeholder="First Name" name="firstname" v-model="firstname">
       <br>    
-              <input tpye="text" class="form-control" placeholder="Last Name" name="lastname">
+              <input tpye="text" class="form-control" placeholder="Last Name" name="lastname" v-model="lastname">
      <br>
-              <input type="tel" class="form-control" placeholder="Phone Number" name="pnumb">
+              <input type="tel" class="form-control" placeholder="Phone Number" name="pnumb" v-model="phoneNumber">
       <br>
-                <input type="text" class="form-control" id="email" placeholder="Enter email" name="email">
-   <br>       <!-- <input type="email" name="_replyto" placeholder="Email"> -->
-            <input type="password" class="form-control" placeholder="Enter password" name="pswd">
+                <input type="text" class="form-control" id="email" placeholder="Enter email"  name="email" v-model="email">
+   <br>     
     <br>    <textarea name="message" class="form-control" placeholder="Message"></textarea>
   <br>   
       <!-- your other form fields go here -->
@@ -83,30 +48,86 @@
       <button type="submit" class="btn btn-primary mt-3">Submit</button>
       <!-- reset button -->
       <button type="reset" class="btn btn-info mt-3">Reset</button>
-      <!-- <labal for="reset"></labal> -->
+
       </div>
     </div>
   </div>
+  <br>
+<br>
+<div class="wrapper">
+  <div class="icon facebook">
+    <div class="text">Facebook</div> 
+      <span><i>
+        <a class="fab fa-facebook-f" href="https://www.facebook.com/siyanda.ncamazana.56"></a>
+        </i>
+        </span>
+  </div>
+   <div class="icon github">
+    <div class="text">Github</div>
+      <span><i>
+        <a class="fab fa-github" href="https://github.com/Ncamazana08"></a>
+        </i></span>
+  </div>
+   <div class="icon linkedin">
+    <div class="text">LinkedIn</div>
+      <span><i>
+    <a class="fab fa-linkedin" href="https://www.linkedin.com/in/siyanda-ncamazana-9866b4223/"></a>
+     </i>
+      </span>
+  </div>
 
+   <!-- <div class="icon github">
+    <div class="text">Github</div>
+      <span><i class="fab fa-github"></i></span>
+  </div> -->
+</div>
 
  </form>
+ 
 </template>
 
 <script>
-      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-
+export default{
+  data(){
+    return{
+      
+      firstname: "",
+      lastname: "",
+      email: "",
+      phoneNumber: "",
+      message: ""
+    }
+  },
+  method: {
+    handleSubmit() {
+      console.log(this.firstname, this.lastname, this.email, this.phoneNumber, this.message),
+      fetch('https://dashboard.heroku.com/apps/api-bckend/contacts',  
+      {
+        method: 'POST',
+        body: JSON.stringify({
+         firstname: this.firstname,
+         lastname: this.lastname,
+         email: this.email,
+         phoneNumber: this.phoneNumber,
+         message: this.message,
+        }),
+        headers: {
+          'Content-type': 'application/json; charset=UTF-8',
+        },
+      })
+      .then((response) => response.json())
+      .then((json) => console.log(json));
+    }
+  }
+}
 </script>
 
-<style>
-/*  */
+<style scoped>
 form,
 input,
 textarea,
 button { 
-  /* background: rgba(0, 0, 0, 0.35); */
-  /* box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); */
-  /* backdrop-filter: blur(6px);
-  -webkit-backdrop-filter: blur(6px); */
+ 
   border-radius: 10px;
   /* color: white; */
   padding: 5% 10%;
@@ -128,44 +149,69 @@ form {
   padding-top: 20px;
   padding-right: 60px;
 }
-.icon{
-  padding-left: 50px;
+body{
+  display:grid;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  /* place-items: center; */
+  background: linear-gradient(315deg, #ffffff, #d7e1ec);
 }
-/* label{
-    color: #aaa;
-    display: inline-block;
-    margin: 25px 0 15px;
-    font-size: 0.6em;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-weight: bold;
+.wrapper{
+  display: inline-flex;
 }
-input,select{
-    display: block;
-    padding: 10px 6px;
-    width: 100%;
-    box-sizing: border-box;
-    border: none;
-    border-bottom: 1px sold #ddd;
-    color: #5555;
-} 
-input[type="checkbox"]{
-display: inline-block;
-width: 16px;
-margin: 0 10px 0 0;
-position: relative;
-top: 2px;
+.wrapper .icon{
+  margin: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
 }
-.pill{
-    background: #eee;
-    display: inline-block;
-    margin: 20px 10px 0 0;
-    padding: 6px 12px;
-    font-size: 12px;
-    letter-spacing: 1px;
-    border-radius: 20px;
-    color: #777;
-    font-weight: bold;
-    cursor: pointer;
-} */
+.wrapper .icon span{
+  position: relative;
+  height: 60px;
+  width: 60px;
+  display: block;
+  background: #fff;
+  text-align: center;
+  border-radius: 50%;
+  z-index: 2;
+  box-shadow: 0 10px 10px rgba(0,0,0,);
+}
+.wrapper .icon span i{
+  font-size: 25px;
+  line-height: 60px;
+}
+.wrapper .icon .text{
+  position: absolute;
+  top: -0px;
+  background:white;
+  font-size: 20px;
+  padding: 10px 14px;
+  border-radius: 20px;
+  box-shadow: 0 10px 10px rgba(0,0,0,);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265,1.55);
+}
+.wrapper .icon:hover .text{
+  top: -70px;
+  opacity: 1;
+  pointer-events: auto;
+}
+.wrapper .icon .text::before{
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 1;
+}
+.wrapper .icon:hover span
+.wrapper .icon:hover .text{
+  text-shadow: 0px -1px 0px rgba(0,0,0,0.4);
+}
+
+
 </style>

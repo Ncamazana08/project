@@ -12,7 +12,8 @@ export default {
 </script>
 
 <style>
-footer{padding: 15px;
+footer{
+  padding: 20px;
 position: relative;
 background-position: 0%;
   text-align: center;

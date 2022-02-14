@@ -10,14 +10,19 @@
         </div>
 
             <div class="timeline">
-
-                <div class="containerp left timeline-cont" data-aos="fade-right">
-                    <div class="contentq">
-                     <h2 style="color:black">2009-2014</h2>
-                    <strong><p style="font-size: 20px;">Claremont Primary School, <br> Palmyra Road, Claremont, <br> Cape Town.</p></strong> 
-                </div>
-                </div>              
                   <div class="containerp right timeline-cont" data-aos="fade-left">
+                    <div class="contentq">
+                        <h2 style="color:black">September 2021 - March 2022</h2>
+                    <strong><p style="font-size: 20px;">Coding Bootcamp, <br>Life Choices Academy, <br> Imam Haron Road, Landsdown<br> Cape Town.</p></strong>
+                    </div>
+                </div>
+                       <div class="containerp left timeline-cont" data-aos="fade-right">
+                    <div class="contentq">
+                    <h2 style="color:black">March 2021 - September 2021</h2>
+                    <strong><p style="font-size: 20px;">Higher Certificate in Office Administration, Rosebank College.IIE <br> Buitengracht Street <br> Capr Town.</p></strong> 
+                    </div>
+                </div>
+               <div class="containerp right timeline-cont" data-aos="fade-left">
                     <div class="contentq">
                         <h2 style="color:black">2015-2019</h2>
                <strong><p style="font-size: 20px;">Voortrekker High School, <br> Salisbury Road, Kenilworth, <br> Cape Town.</p></strong> 
@@ -27,16 +32,13 @@
                   </div>
                 <div class="containerp left timeline-cont" data-aos="fade-right">
                     <div class="contentq">
-                    <h2 style="color:black">2021</h2>
-                    <strong><p style="font-size: 20px;">Higher Certificate in Office Administration, Rosebank College.IIE <br> Buitengracht Street <br> Capr Town.</p></strong> 
-                    </div>
+                     <h2 style="color:black">2009-2014</h2>
+                    <strong><p style="font-size: 20px;">Claremont Primary School, <br> Palmyra Road, Claremont, <br> Cape Town.</p></strong> 
                 </div>
-                <div class="containerp right timeline-cont" data-aos="fade-left">
-                    <div class="contentq">
-                        <h2 style="color:black">2021</h2>
-                    <strong><p style="font-size: 20px;">Coding Bootcamp, <br>Life Choices Academy, <br> Imam Haron Road, Landsdown<br> Cape Town.</p></strong>
-                    </div>
-                </div>
+                </div>              
+   
+         
+
             
                   </div> 
             </div>
@@ -44,12 +46,6 @@
 </div>
 
 </template>
-
-<script>
-export default {
-
-}
-</script>
 
 <style>
 #workEdu {

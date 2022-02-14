@@ -37,6 +37,7 @@
               <!-- <td><i class="bi bi-chevron-right" style="color: blue;"></i><strong>Website:</strong> https://github.com/Ncamazana08/Portfolio</td> -->
               <td><i class="bi bi-chevron-right" style="color: blue;"></i><strong>Education:</strong> Life Choices Coding Course</td>
             </tr>
+            
             <tr>
               <td><i class="bi bi-chevron-right" style="color: blue;"></i><strong>Phone:</strong> 063-148-0554</td>
               <td><i class="bi bi-chevron-right" style="color: blue;"></i><strong>E-mail:</strong> siyandancamazana08@gmail.com</td>
@@ -123,7 +124,7 @@
             <!-- HTML 
             <i class="val" style="margin-left: 40%;">100%</i> -->
           </span>
-          <div class="progress-bar progress-bar-striped progress-bar-animated " role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" ><strong>20%</strong></div>
+          <div class="progress-bar progress-bar-striped progress-bar-animated " role="progressbar" style="width: 90%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" ><strong>90%</strong></div>
         </div>
       </div>
     </div>
@@ -138,8 +139,8 @@
 <style scoped>
 .progress {
   display: flex;
-  height: 20px;
-  overflow: hidden;
+  height: 18px;
+  /* overflow: hidden; */
 }
     .skills{
       margin: 0%;
