@@ -33,15 +33,15 @@
         <div class="row" style="width:500px">
           <div class="col">
         
-              <input type="text" class="form-control" placeholder="First Name" name="firstname" v-model="firstname">
+              <input type="text" class="form-control" placeholder="First Name" v-model="firstname">
       <br>    
-              <input tpye="text" class="form-control" placeholder="Last Name" name="lastname" v-model="lastname">
+              <input tpye="text" class="form-control" placeholder="Last Name" v-model="lastname">
      <br>
-              <input type="tel" class="form-control" placeholder="Phone Number" name="pnumb" v-model="phoneNumber">
+              <input type="tel" class="form-control" placeholder="Phone Number" v-model="phoneNumber">
       <br>
-                <input type="text" class="form-control" id="email" placeholder="Enter email"  name="email" v-model="email">
+                <input type="text" class="form-control" id="email" placeholder="Enter email" v-model="email">
    <br>     
-    <br>    <textarea name="message" class="form-control" placeholder="Message"></textarea>
+    <br>    <textarea name="message" class="form-control" placeholder="Message" v-model="message"></textarea>
   <br>   
       <!-- your other form fields go here -->
       <div class="enter" style="row justify-content-center align-items-center">
