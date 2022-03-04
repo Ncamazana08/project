@@ -67,7 +67,7 @@
   content: '';
   position: absolute;
   width: 6px;
-  background-color: white;
+  background-color: blue;
   top: 0;
   bottom: 0;
   left: 50%;
@@ -117,7 +117,7 @@
   right: 30px;
   border: medium solid blue;
   border-width: 10px 0 10px 10px;
-  border-color: transparent transparent transparent white;
+  border-color: transparent transparent transparent lightblue;
 }
 
 /* Add arrows to the right container (pointing left) */
@@ -131,18 +131,19 @@
   left: 30px;
   border: medium solid blue;
   border-width: 10px 10px 10px 0;
-  border-color: transparent white transparent transparent;
+  border-color: transparent lightblue transparent transparent;
 }
 
 /* Fix the circle for containers on the right side */
 .right::after {
   left: -16px;
+  
 }
 
 /* The actual content */
 .contentq {
   padding: 20px 30px;
-  background-color: white;
+  background-color: lightblue;
   position: relative;
   border-radius: 6px;
 }

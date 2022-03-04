@@ -8,11 +8,11 @@
     <router-link to="/Contacts">Contacts</router-link>
    -->
   <router-view/>
-  <Footer />
+  <!-- <Footer /> -->
 </template>
 <script>
 import Navbar from './components/Navbar.vue'
-import Footer from './components/Footer.vue'
+// import Footer from './components/Footer.vue'
 
 export default ({
   data() {
@@ -20,7 +20,7 @@ export default ({
   },
   components: {
     Navbar,
-    Footer,
+    // Footer,
   }
 })
 </script>
@@ -28,7 +28,7 @@ export default ({
 
 <style>
 #app {
-  background-image: url("https://i.postimg.cc/8P9JS7WL/Violet-Geometric-Cool-Desktop-Wallpaper-2.png");
+  background:linear-gradiant(rgb(251, 92, 118),rgb(230, 15, 15));
   background-size: cover;
   background-position: center;
   font-family: Avenir, Helvetica, Arial, sans-serif;

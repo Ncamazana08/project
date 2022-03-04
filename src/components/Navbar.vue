@@ -1,4 +1,5 @@
 <template>
+<div id="nav">
 <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">Siyanda Ncamazana</a>
@@ -30,10 +31,78 @@
       </ul>
     </div>
   </div>
+  
 </nav>
-    
+    </div>
 </template>
 
 <style >
-
+#nav {
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(#2C3E50, rgba(0, 0, 0, 0.397));
+  box-shadow: 8px 8px 15px white,;
+}
+#nav-btn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: #5dd9ff;
+  padding: 10px;
+  border-radius: 10%;
+  outline: none;
+  display: none;
+}
+#nav {
+  margin-left: 0;
+  margin-top: 4px;
+  z-index: 674564563453;
+  position: fixed;
+  top:0;
+  left: 0;
+  width:100%;
+  /* padding: 30px; */
+  }
+  nav a {
+    font-weight: bold;
+    color: blue;
+    padding: 20px;
+    text-decoration: none;}
+    nav.router-link-exact-active:not(.logout) {
+      color: lightblue;
+    }
+  
+@media screen and (max-width: 500px) {
+  #nav {
+    height: 100%;
+    left: -100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: left 0.1s linear;
+  }
+  #nav.active {
+    left: 0;
+  }
+  #nav-btn {
+    display: block;
+  }
+}
+#nav a:hover {
+  background-color: lightblue;
+}
+/* 
+.active {
+  background-color: #04AA6D;
+} */
+#nav a {
+  padding: 12px;
+  /* color: white; */
+  text-decoration: none;
+  font-size: 17px;
+}
 </style>

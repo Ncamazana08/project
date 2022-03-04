@@ -3,7 +3,7 @@
       <div class="container3">
         <div class="row justify-content-center align-items-center" >
           <div class="col-md-5 ">
-      <h3 class="text-uppercase" style="margin-top: 0px; font-size: 50px; text-align: center; padding-bottom: 10px;"><strong>Testimonials</strong></h3><br>
+      <h3 class="text-uppercase" style="margin-top: 0px; font-size: 50px; text-align: center; padding-bottom: 10px; "><strong>Testimonials</strong></h3><br>
       <p><em>Please place mouse icon on the card for the Testimonial at the back.</em></p>
 
     </div>
@@ -89,6 +89,7 @@
     </div>
         </div>
       </div>
+
 </template>
 
 <style scoped>   
@@ -163,7 +164,7 @@ div.flip-card {
 .container3 {
   width: 80%; 
   justify-content: center; 
-  margin-top: 8%; 
+  margin-top: 5%; 
   margin-left: 10%;
 }
 </style>

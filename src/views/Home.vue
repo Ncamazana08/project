@@ -19,7 +19,7 @@
                       </h1>         
           </div>
         <div class= "col-md-5 text-center d-none d-md-block">
-          <img class="img-fluit" alt="Vue logo" src="https://i.postimg.cc/nh2V8gjv/pikky.jpg" style="margin-top:20px; padding-top: 60px; margin-bottom:50px; height: 44rem" >
+          <img class="img-fluit" alt="Vue logo" src="https://i.postimg.cc/nh2V8gjv/pikky.jpg" style="margin-top:130px; padding-top: 40px; margin-bottom:50px; height: 44rem" >
       </div>
      </div>
  </div>
@@ -36,7 +36,7 @@ body{
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 
 .wrapper .static-txt{
-  color: #fff;
+  color: cyan;
   font-size: 70px;
   font-weight: 800;
 }

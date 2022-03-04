@@ -5,8 +5,8 @@
     <div class="container2" style="width: 80%; justify-content: center; margin-top: 8%; margin-left: 10%;">
 
       <div class="row justify-content-center align-items-center" >
-      <div class="col-md-5 ">
-    <h3 class="text-uppercase" style="margin-top: 40px; font-size: 40px ;"><strong>Learn More About Me</strong></h3>
+      <div class="col-md-6 ">
+    <h3 class="text-uppercase" style="margin-top: 0px; font-size: 50px ;"><strong>Learn More About Me</strong></h3>
   </div>
 
     <!-- ABOUT ME TABLE -->
@@ -25,7 +25,8 @@
           <!-- <h2 style="margin: 0%; padding-bottom: 20px;"></h2> -->
           <strong><p class="align-self-left" style="marging-top: 20%; padding-top:20px; padding-bottom: 20px;">
             I am a hard-working individual with a bubbly personality and strong interpersonal skills. I am enthusiastic, determined, committed and a passionate individual. I believe that knowledge is power that is why I am open-minded and aspired to learn new things every day. </p></strong>
-        </div> <table class="table table-borderless">
+        </div> 
+        <strong><table class="table table-borderless">
           <tbody>
             <tr>
               <td><i class="bi bi-chevron-right" style="color: blue;"></i>Birthday: 18 August 2001</td>
@@ -46,13 +47,14 @@
             </tr>
           </tbody>
         </table><br>
+        </strong>
       </div>
     </div>
   </div>
 </div>
     </div>
 <!-- Skills -->
-<div class="skills container" style="margin-left: 25px; padding-bottom: 10px; ">
+<div class="skills container" style="margin-left: 25px; padding-bottom: 40px; ">
   <div class="section-title">
     <div class="row justify-content-center align-items-center" >
       <div class="col-md-5 ">
@@ -68,9 +70,8 @@
     <h5>Microsoft Office</h5>
     <div class="row skils-content">
       <div class="col-6">
-        <div class="progress">
-          <span class="Skill">
-          </span>
+        <div class="progress skill-bar">
+                        <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
           <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" ><strong>80%</strong></div>
         </div>
       </div>
@@ -136,12 +137,12 @@
 </div>
   
 </template>
+
 <style scoped>
-.progress {
+/* .progress {
   display: flex;
   height: 18px;
-  /* overflow: hidden; */
-}
+} */
     .skills{
       margin: 0%;
       padding: 0%;
@@ -153,14 +154,6 @@
     }
 
     .container2{
-      /* padding-top: 0px;
-      margin-top: 0px; */
-      /* flex-direction: column;
-      background-color: lightslategray;
-      box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-      backdrop-filter: blur( 1.5px );
-      -webkit-backdrop-filter: blur( 1.5px );
-      border-radius: 50px; */
       border: 3px solid white;
     }
     #siyandaimg {
@@ -183,5 +176,33 @@
   100% {
     opacity: 1;
   }
+}
+
+.progress {
+  height: 20px;
+    border-radius:20px;
+
+}
+
+.progress .skill .val {
+  float: right;
+  font-style: normal;
+  margin: 0 20px 0 0;
+}
+span {
+  
+    display:block;
+    position: relative;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform:uppercase;
+    color: #888888;
+	line-height: 17px;
+	margin-bottom:5px;
+}
+.progress-bar {
+  text-align: center;
+  border-radius:20px;
+  transition-duration: 3s;
 }
 </style>
