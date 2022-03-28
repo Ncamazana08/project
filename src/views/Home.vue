@@ -1,5 +1,6 @@
 <template>
-  
+  <body>
+ 
   <div class="contain_01" >
 <div class="jumbotron text-center">
       <div class="row justify-content-center align-items-center" style="height: calc(100vh - 166px)" >
@@ -24,13 +25,15 @@
      </div>
  </div>
 </div>
-
+   
+  </body>
 </template>
 
 
 <style scoped>
 body{
-  overflow: scroll;
+    background-color: linear-gradient(rgb(251, 92, 118),rgb(230, 15, 15));
+  /* overflow: scroll; */
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');

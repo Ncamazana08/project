@@ -104,7 +104,10 @@
           
     </div>
 
- 
+         <footer>
+        <p>Web Developer:
+        <a href="https://github.com/Ncamazana08?tab=repositories">Siyanda Ncamazana</a></p>
+        </footer>
 </template>
 
 <script>
@@ -197,6 +200,7 @@ body{
   position: relative;
   z-index: 2;
   cursor: pointer;
+
 }
 .wrapper .icon span{
   position: relative;
@@ -214,6 +218,7 @@ body{
   line-height: 60px;
 }
 .wrapper .icon .text{
+  color: blue;
   position: absolute;
   top: -0px;
   background:cyan;
@@ -226,7 +231,7 @@ body{
   transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265,1.55);
 }
 .wrapper .icon:hover .text{
-  top: -70px;
+  top: 70px;
   opacity: 1;
   pointer-events: auto;
 }
@@ -274,7 +279,7 @@ body{margin-top:20px;}
   margin: 8px 0px;
 }
 .con_sub_text {
-  margin: 20px 0px;
+  /* margin: 20px 0px; */
   font-size: 15px;
 }
 
@@ -396,5 +401,14 @@ img{
   .blog-detail-box {
   padding-right: 0px;
 }
+}
+footer{
+  padding: 5px;
+position: relative;
+background-position: 0%;
+  text-align: center;
+  background-color: black;
+  color: white;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
 }
 </style>

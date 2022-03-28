@@ -43,8 +43,8 @@
   top: 0;
   left: 0;
   width: 100%;
-  background: linear-gradient(#2C3E50, rgba(0, 0, 0, 0.397));
-  box-shadow: 8px 8px 15px white,;
+    /* background-color: linear-gradient(rgb(251, 92, 118),rgb(230, 15, 15)); */
+  /* box-shadow: 8px 8px 15px white,; */
 }
 #nav-btn {
   position: fixed;
