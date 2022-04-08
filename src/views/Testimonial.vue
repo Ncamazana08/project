@@ -1,9 +1,13 @@
 <template>
-    
+     <section id="testimonials" class="testimonials">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Testimonials</h2>
       <div class="container3">
         <div class="row justify-content-center align-items-center" >
           <div class="col-md-5 ">
-      <h3 class="text-uppercase" style="margin-top: 0px; font-size: 50px; text-align: center; padding-bottom: 10px; "><strong>Testimonials</strong></h3><br>
+      <!-- <h3 class="text-uppercase" style="margin-top: 0px; font-size: 50px; text-align: center; padding-bottom: 10px; "><strong>Testimonials</strong></h3><br> -->
       <p><em>Please place mouse icon on the card for the Testimonial at the back.</em></p>
 
     </div>
@@ -89,7 +93,9 @@
     </div>
         </div>
       </div>
-
+ </div>
+      </div>
+    </section>
 </template>
 
 <style scoped>   
@@ -166,5 +172,41 @@ div.flip-card {
   justify-content: center; 
   margin-top: 5%; 
   margin-left: 10%;
+}
+section {
+  padding:0;
+  margin: 0;
+}
+
+.section-bg {
+  background-color: #e7f8f6;
+}
+h2{
+    text-align: center;
+
+}
+.section-title {
+  padding-bottom: 30px;
+}
+.section-title h2 {
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+}
+.section-title h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: blue;
+  bottom: 0;
+  left: calc(50% - 25px);
+}
+.section-title p {
+  margin-bottom: 0;
 }
 </style>

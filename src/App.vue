@@ -66,8 +66,8 @@ export default ({
     padding: 1px;
 }
 .container{
-    margin:180px;
-    padding-top: 30px;
+    margin:100px;
+    padding-top: 10px;
 }
 
 .fw-bolder{

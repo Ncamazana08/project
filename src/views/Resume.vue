@@ -1,30 +1,34 @@
 <template>
+ <section id="testimonials" class="testimonials">
+      <div class="container" data-aos="fade-up">
 
+        <div class="section-title">
+          <h2>Resume</h2>
 <div id="workEdu">
             <div class="container3">
         <div class="col-sm-auto col-md-auto col-lg- col-xl- col-xxl">
         <div class="row justify-content-center align-items-center" >
           <div class="col-md-5 ">
-      <h3 class="text-uppercase" style="margin-top: 50px; font-size: 50px; text-align: center;"><strong>My Resume</strong></h3>
+      <!-- <h3 class="text-uppercase" style="margin-top: 50px; font-size: 50px; text-align: center;"><strong>My Resume</strong></h3> -->
     </div>
         </div>
 
             <div class="timeline">
                   <div class="containerp right timeline-cont" data-aos="fade-left">
                     <div class="contentq">
-                        <h2 style="color:black">September 2021 - March 2022</h2>
+                        <h3 style="color:black">September 2021 - March 2022</h3>
                     <strong><p style="font-size: 20px;">Coding Bootcamp, <br>Life Choices Academy, <br> Imam Haron Road, Landsdown<br> Cape Town.</p></strong>
                     </div>
                 </div>
                        <div class="containerp left timeline-cont" data-aos="fade-right">
                     <div class="contentq">
-                    <h2 style="color:black">March 2021 - September 2021</h2>
+                    <h3 style="color:black">March 2021 - September 2021</h3>
                     <strong><p style="font-size: 20px;">Higher Certificate in Office Administration, Rosebank College.IIE <br> Buitengracht Street <br> Capr Town.</p></strong> 
                     </div>
                 </div>
                <div class="containerp right timeline-cont" data-aos="fade-left">
                     <div class="contentq">
-                        <h2 style="color:black">2015-2019</h2>
+                        <h3 style="color:black">2015-2019</h3>
                <strong><p style="font-size: 20px;">Voortrekker High School, <br> Salisbury Road, Kenilworth, <br> Cape Town.</p></strong> 
 
                     <!-- <p style="font-size: 20px;">Voortrekker High School, <br> Salisbury Road, Kenilworth <br> Cape Town.<p> -->
@@ -32,7 +36,7 @@
                   </div>
                 <div class="containerp left timeline-cont" data-aos="fade-right">
                     <div class="contentq">
-                     <h2 style="color:black">2009-2014</h2>
+                     <h3 style="color:black">2009-2014</h3>
                     <strong><p style="font-size: 20px;">Claremont Primary School, <br> Palmyra Road, Claremont, <br> Cape Town.</p></strong> 
                 </div>
                 </div>              
@@ -44,7 +48,9 @@
             </div>
         </div>
 </div>
-
+        </div>
+      </div>
+ </section>
 </template>
 
 <style>
@@ -183,5 +189,40 @@
 .carousel-img {
   width: 40%;
   border-radius: 100%;}
-  
+  section {
+  padding:0;
+  margin: 0;
+}
+
+.section-bg {
+  background-color: #e7f8f6;
+}
+h2{
+    text-align: center;
+
+}
+.section-title {
+  padding-bottom: 30px;
+}
+.section-title h2 {
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+}
+.section-title h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: blue;
+  bottom: 0;
+  left: calc(50% - 25px);
+}
+.section-title p {
+  margin-bottom: 0;
+}
 </style>

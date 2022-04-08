@@ -1,6 +1,12 @@
 <template>
-<div class="container bootstrap snippets">
-        <h3 class="text-uppercase" style="margin-top: 0px; font-size: 50px; text-align: center; padding-top: 30px;"><strong>Contacts</strong></h3><br>
+ 
+<div class="container0 bootstrap snippets">
+        <!-- <h3 class="text-uppercase" style="margin-top: 0px; font-size: 50px; text-align: center; padding-top: 30px;"><strong>Contacts</strong></h3><br> -->
+     <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Contact</h2>
       <div class="row text-center" >
         <div class="col-sm-4">
           <div class="contact-detail-box">
@@ -101,13 +107,31 @@
         </div> <!-- end col -->
 
       </div> <!-- end row -->
-          
-    </div>
-
-         <footer>
+        </div>
+      </div>  
+    
+    </section>
+        </div>
+      
+  
+          <footer id="footer">
+    <!-- <div class="container"> -->
+      <div class="copyright">
+        &copy; Copyright <strong><span>S.Ncamazana</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/kelly-free-bootstrap-cv-resume-html-template/ -->
+        Designed by <a href="https://bootstrapmade.com/">Siyanda Ncamazana</a>
+      </div>
+    <!-- </div> -->
+  </footer>
+         <!-- <footer>
         <p>Web Developer:
         <a href="https://github.com/Ncamazana08?tab=repositories">Siyanda Ncamazana</a></p>
-        </footer>
+        </footer> -->
 </template>
 
 <script>
@@ -147,7 +171,7 @@ export default{
 </script>
 
 <style scoped>
-.container {
+.container0 {
   height: 100%;
   margin-top: 20px;
   overflow: hidden;
@@ -264,7 +288,6 @@ body{margin-top:20px;}
 .form-control:hover ,.form-control:focus{
   border-color: black;
 }
-
 
 .error {
   margin: 8px 0px;
@@ -402,7 +425,7 @@ img{
   padding-right: 0px;
 }
 }
-footer{
+/* footer{
   padding: 5px;
 position: relative;
 background-position: 0%;
@@ -410,5 +433,20 @@ background-position: 0%;
   background-color: black;
   color: white;
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+} */
+
+#footer {
+  background: #e9e8e6;
+  padding: 30px 0;
+  color: #222222;
+  font-size: 14px;
+  text-align: center;
+}
+#footer .credits {
+  padding-top: 5px;
+  font-size: 13px;
+}
+#footer .credits a {
+  color: cyan;
 }
 </style>
