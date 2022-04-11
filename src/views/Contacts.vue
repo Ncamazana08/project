@@ -124,7 +124,7 @@
         <!-- You can delete the links only if you purchased the pro version. -->
         <!-- Licensing information: https://bootstrapmade.com/license/ -->
         <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/kelly-free-bootstrap-cv-resume-html-template/ -->
-        Designed by <a href="https://bootstrapmade.com/">Siyanda Ncamazana</a>
+        Designed by <a href="https://github.com/Ncamazana08/project">Siyanda Ncamazana</a>
       </div>
     <!-- </div> -->
   </footer>

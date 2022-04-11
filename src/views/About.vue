@@ -22,15 +22,15 @@
           </div>
           <div class="col-lg-8 pt-4 pt-lg-0 content">
             <!-- <h3>Illustrator &amp; UI/UX Designer</h3> -->
-            <p class="fst-italic">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua.
-            </p>
+            <!-- <p class="fst-italic">
+             <br>
+             <br>
+            </p> -->
             <div class="row">
               <div class="col-lg-6">
                 <ul>
                   <li><i class="bi bi-rounded-right"></i> <strong>Birthday:</strong> 18 August 2001</li>
-                  <li><i class="bi bi-rounded-right"></i> <strong>Website:</strong> www.example.com</li>
+                  <li><i class="bi bi-rounded-right"></i> <strong>Website:</strong> https://eager-davinci-565b7a.netlify.app/</li>
                   <li><i class="bi bi-rounded-right"></i> <strong>Phone:</strong> 063 148 0554 </li>
                 </ul>
               </div>
@@ -45,8 +45,7 @@
               </div>
             </div>
             <p>
-              Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis.
-              Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque. Aliquid amet quidem ut quaerat cupiditate. Ab et eum qui repellendus omnis culpa magni laudantium dolores.
+              My reasons for choosing a career in tech is mainly because it is fun and makes you a better thinker, keeps you mentally young, gives you a passport to companies everywhere in the world, keeps you challenged, is not going to be automated out of existence, pays well and is compatible with whatever passions you might have.
             </p>
           </div>
         </div>
